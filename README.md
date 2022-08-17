@@ -19,7 +19,8 @@ def containsIngredient(dishName, ingredient):
   return ingredient in dishName
 
 def findYummyFood(cuisine, preference):
-  return list(filter(lambda dish: containsIngredient(dish, preference), cuisine))
+  return list(filter(
+    lambda dish: containsIngredient(dish, preference), cuisine))
 
 findYummyFood(menu, 'Beef')
 ```
@@ -40,7 +41,8 @@ def 有配料(菜名, 配料):
   return 配料 in 菜名
 
 def 找好吃的(美食, 喜好):
-  return list(filter(lambda 菜: 有配料(菜, 喜好), 美食))
+  return list(filter(
+    lambda 菜: 有配料(菜, 喜好), 美食))
 
 找好吃的(菜单, '牛')
 ```
